@@ -14,7 +14,7 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-#echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
 wget 'https://raw.githubusercontent.com/wekingchen/my-file/master/Actions-OpenWrt.zip' --no-check-certificate && sudo unzip Actions-OpenWrt.zip && sudo rm -f Actions-OpenWrt.zip
