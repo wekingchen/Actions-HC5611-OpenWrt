@@ -18,4 +18,4 @@ ls
 cd openwrt
 
 # 解决shadowsocksr-libev源缺少依赖问题
-ln -s ./feeds/helloworld/shadowsocksr-libev/ ./package/feeds/helloworld/shadowsocksr-libev
+# ln -s ./feeds/helloworld/shadowsocksr-libev/ ./package/feeds/helloworld/shadowsocksr-libev
