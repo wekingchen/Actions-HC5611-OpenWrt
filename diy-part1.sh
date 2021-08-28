@@ -21,4 +21,4 @@ echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.defau
 wget 'https://raw.githubusercontent.com/wekingchen/my-file/master/Actions-OpenWrt.zip' --no-check-certificate && sudo unzip -o Actions-OpenWrt.zip && sudo rm -f Actions-OpenWrt.zip
 
 # 解决shadowsocksr-libev源缺少依赖问题
-ln -s $GITHUB_WORKSPACE/openwrt/feeds/helloworld/shadowsocksr-libev/ $GITHUB_WORKSPACE/openwrt/package/feeds/helloworld/shadowsocksr-libev
+ln -s /home/runner/work/openwrt/feeds/helloworld/shadowsocksr-libev/ /home/runner/work/openwrt/package/feeds/helloworld/shadowsocksr-libev
