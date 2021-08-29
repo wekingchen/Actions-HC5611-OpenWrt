@@ -18,4 +18,4 @@ echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.defau
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
 # 解决helloworld源码缺失
-wget 'https://raw.githubusercontent.com/wekingchen/Actions-OpenWrt/raw/main/myfiles/ssr.zip' --no-check-certificate && sudo unzip -o ssr.zip && sudo rm -f ssr.zip
+wget 'https://github.com/wekingchen/Actions-OpenWrt/raw/main/myfiles/ssr.zip' --no-check-certificate && sudo unzip -o ssr.zip && sudo rm -f ssr.zip
