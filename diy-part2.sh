@@ -15,3 +15,6 @@
 
 # 解决shadowsocksr-libev源缺少依赖问题
 # ln -s ./feeds/helloworld/shadowsocksr-libev/ ./package/feeds/helloworld/shadowsocksr-libev
+
+# 使用旧版无报错的travelmate
+wget 'https://github.com/wekingchen/Actions-OpenWrt/raw/main/myfiles/travelmate2.04.zip' --no-check-certificate && sudo unzip -o travelmate2.04.zip && sudo rm -f travelmate2.04.zip
