@@ -20,4 +20,4 @@
 # wget 'https://github.com/wekingchen/Actions-OpenWrt/raw/main/myfiles/travelmate2.04.zip' --no-check-certificate && sudo unzip -o travelmate2.04.zip && sudo rm -f travelmate2.04.zip
 
 # 使用新版的luci-app-travelmate
-wget 'https://github.com/wekingchen/Actions-OpenWrt/raw/main/myfiles/luci-app-travelmate.zip' --no-check-certificate && sudo unzip -o luci-app-travelmate.zip && sudo rm -f luci-app-travelmate.zip
+#wget 'https://github.com/wekingchen/Actions-OpenWrt/raw/main/myfiles/luci-app-travelmate.zip' --no-check-certificate && sudo unzip -o luci-app-travelmate.zip && sudo rm -f luci-app-travelmate.zip
