@@ -12,8 +12,8 @@
 name: Update Checker
 
 env:
-  REPO_URL: https://github.com/Lienol/openwrt
-  REPO_BRANCH: main
+  REPO_URL: https://github.com/fw876/helloworld
+  REPO_BRANCH: master
 
 on:
   workflow_dispatch:
