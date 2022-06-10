@@ -54,8 +54,8 @@ jobs:
         cd /usr/bin
         sudo mv go go.old
         sudo wget https://go.dev/dl/go1.18.3.linux-amd64.tar.gz
-        tar zxf go1.18.3.linux-amd64.tar.gz
-        ls -l go
+        sudo tar zxf go1.18.3.linux-amd64.tar.gz
+        sudo ls -l go
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
 
@@ -65,7 +65,7 @@ jobs:
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
-        go version
+        sudo go version
 
     - name: Load custom feeds
       run: |
