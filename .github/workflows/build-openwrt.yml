@@ -56,7 +56,6 @@ jobs:
         sudo wget https://go.dev/dl/go1.18.3.linux-amd64.tar.gz
         sudo tar zxf go1.18.3.linux-amd64.tar.gz
         sudo ls -l go
-        go version
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
 
