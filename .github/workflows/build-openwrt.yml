@@ -52,10 +52,10 @@ jobs:
         sudo -E apt-get -qq clean
         sudo timedatectl set-timezone "$TZ"
         cd /usr/bin
-        sudo mv go go.old
-        sudo wget https://go.dev/dl/go1.18.3.linux-amd64.tar.gz
-        sudo tar zxf go1.18.3.linux-amd64.tar.gz
-        sudo ls -l go
+        mv go go.old
+        wget https://go.dev/dl/go1.18.3.linux-amd64.tar.gz
+        tar zxf go1.18.3.linux-amd64.tar.gz
+        ls -l go
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
 
