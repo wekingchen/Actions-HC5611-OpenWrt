@@ -53,7 +53,7 @@ jobs:
         sudo timedatectl set-timezone "$TZ"
         cd /usr/bin
         sudo mv go go.old
-        wget https://go.dev/dl/go1.18.3.linux-amd64.tar.gz
+        sudo wget https://go.dev/dl/go1.18.3.linux-amd64.tar.gz
         tar zxf go1.18.3.linux-amd64.tar.gz
         ls -l go
         sudo mkdir -p /workdir
