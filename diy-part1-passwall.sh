@@ -15,10 +15,8 @@
 
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-
-# 解决luci-app-passwall源码缺失
-git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall package/passwall
+echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
+echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main" >> "feeds.conf.default"
 
 # 解决helloworld源码缺失
 wget 'https://github.com/wekingchen/Actions-HC5611-OpenWrt/raw/main/myfiles/passwall.zip' --no-check-certificate && unzip -o passwall.zip && rm -f passwall.zip
