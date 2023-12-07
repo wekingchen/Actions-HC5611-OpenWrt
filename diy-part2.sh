@@ -13,6 +13,9 @@
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 
+# 去掉ssr+中shadowsocksr-libev的libopenssl-legacy依赖支持
+sed -i 's/ +libopenssl-legacy//g' feeds/helloworld/shadowsocksr-libev/Makefile
+
 git clone https://github.com/coolsnowwolf/lede.git
 cp -r lede/tools/ninja tools/ninja
 rm -rf lede
