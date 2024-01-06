@@ -16,6 +16,12 @@
 # 去掉ssr+中shadowsocksr-libev的libopenssl-legacy依赖支持
 sed -i 's/ +libopenssl-legacy//g' feeds/helloworld/shadowsocksr-libev/Makefile
 
+# 跟随最新版naiveproxy
+rm -rf feeds/helloworld/naiveproxy
+git clone -b v5 https://github.com/sbwml/openwrt_helloworld.git
+cp -r openwrt_helloworld/naiveproxy feeds/helloworld
+rm -rf openwrt_helloworld
+
 git clone https://github.com/coolsnowwolf/lede.git
 cp -r lede/tools/ninja tools/ninja
 rm -rf lede
