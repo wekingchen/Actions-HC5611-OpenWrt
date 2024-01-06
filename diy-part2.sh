@@ -18,8 +18,10 @@ sed -i 's/ +libopenssl-legacy//g' feeds/helloworld/shadowsocksr-libev/Makefile
 
 # 跟随最新版naiveproxy
 rm -rf feeds/helloworld/naiveproxy
+rm -rf feeds/passwall_packages/naiveproxy
 git clone -b v5 https://github.com/sbwml/openwrt_helloworld.git
 cp -r openwrt_helloworld/naiveproxy feeds/helloworld
+cp -r openwrt_helloworld/naiveproxy feeds/passwall_packages
 rm -rf openwrt_helloworld
 
 git clone https://github.com/coolsnowwolf/lede.git
