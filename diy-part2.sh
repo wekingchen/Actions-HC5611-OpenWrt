@@ -21,6 +21,8 @@ wget https://codeload.github.com/fw876/helloworld/zip/28504024db649b754234777170
 unzip helloworld.zip
 rm -rf feeds/helloworld/shadowsocks-rust
 cp -r helloworld-28504024db649b7542347771704abc33c3b1ddc8/shadowsocks-rust feeds/helloworld
+rm -rf feeds/passwall_packages/shadowsocks-rust
+cp -r helloworld-28504024db649b7542347771704abc33c3b1ddc8/shadowsocks-rust feeds/passwall_packages
 rm -rf helloworld.zip helloworld-28504024db649b7542347771704abc33c3b1ddc8
 
 # 跟随最新版naiveproxy
