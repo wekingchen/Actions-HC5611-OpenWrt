@@ -16,14 +16,11 @@
 # 去掉ssr+中shadowsocksr-libev的libopenssl-legacy依赖支持
 sed -i 's/ +libopenssl-legacy//g' feeds/helloworld/shadowsocksr-libev/Makefile
 
-# ssr+中shadowsocks-rust还原旧版
-wget https://codeload.github.com/fw876/helloworld/zip/28504024db649b7542347771704abc33c3b1ddc8 -O helloworld.zip
-unzip helloworld.zip
+# 固定shadowsocks-rust版本以免编译失败
 rm -rf feeds/helloworld/shadowsocks-rust
-cp -r helloworld-28504024db649b7542347771704abc33c3b1ddc8/shadowsocks-rust feeds/helloworld
+wget -P feeds/helloworld/shadowsocks-rust https://github.com/wekingchen/my-file/raw/master/shadowsocks-rust/Makefile
 rm -rf feeds/passwall_packages/shadowsocks-rust
-cp -r helloworld-28504024db649b7542347771704abc33c3b1ddc8/shadowsocks-rust feeds/passwall_packages
-rm -rf helloworld.zip helloworld-28504024db649b7542347771704abc33c3b1ddc8
+wget -P feeds/passwall_packages/shadowsocks-rust https://github.com/wekingchen/my-file/raw/master/shadowsocks-rust/Makefile
 
 # 跟随最新版naiveproxy
 rm -rf feeds/helloworld/naiveproxy
