@@ -13,8 +13,6 @@
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 
-wget https://codeload.github.com/fw876/helloworld/zip/28504024db649b7542347771704abc33c3b1ddc8 -O helloworld.zip
-unzip helloworld.zip
+# 固定shadowsocks-rust版本以免编译失败
 rm -rf feeds/helloworld/shadowsocks-rust
-cp -r helloworld-28504024db649b7542347771704abc33c3b1ddc8/shadowsocks-rust feeds/helloworld
-rm -rf helloworld.zip helloworld-28504024db649b7542347771704abc33c3b1ddc8
+wget -P feeds/helloworld/shadowsocks-rust https://github.com/wekingchen/my-file/raw/master/shadowsocks-rust/Makefile
