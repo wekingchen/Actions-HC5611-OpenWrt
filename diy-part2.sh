@@ -30,6 +30,10 @@ cp -r openwrt_helloworld/naiveproxy feeds/helloworld
 cp -r openwrt_helloworld/naiveproxy feeds/passwall_packages
 rm -rf openwrt_helloworld
 
+# 修复dns2tcp编译失败的问题
+rm -rf feeds/passwall_packages/dns2tcp
+wget -P feeds/passwall_packages/dns2tcp https://github.com/sbwml/openwrt_helloworld/raw/v5/dns2tcp/Makefile
+
 git clone https://github.com/coolsnowwolf/lede.git
 cp -r lede/tools/ninja tools/ninja
 rm -rf lede
